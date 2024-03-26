@@ -11,7 +11,7 @@ authors = [
     { name = "Nikita Pastukhov", email = "nikita@pastukhov-dev.ru" },
 ]
 
-keywords = ["rabbitmq", "kafka", "framework", "nats", "redis", "message brokers"]
+keywords = ["rabbitmq", "kafka", "framework", "nats", "redis", "message brokers", "pubsub"]
 
 requires-python = ">=3.8"
 
@@ -78,6 +78,12 @@ redis = [
 docs = [
     "fastapi>=0.100.0,<1.0.0",
     "uvicorn>=0.17.0,<1.0.0",
+]
+
+pubsub = [
+    "google-cloud-pubsub>=2.21.0,<3.0.0",
+    "google-auth>=2.29.0,<3.0.0", 
+    "google-auth-oauthlib>=1.2.0,<2.0.0",
 ]
 
 # dev dependencies
@@ -263,6 +269,7 @@ markers = [
     "confluent",
     "nats",
     "redis",
+    "pubsub",
     "slow",
     "all",
 ]
